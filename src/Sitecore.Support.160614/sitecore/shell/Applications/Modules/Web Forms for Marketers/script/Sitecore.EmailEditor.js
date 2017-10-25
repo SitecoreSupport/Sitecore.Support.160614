@@ -160,7 +160,7 @@ window.Sitecore.Wfm.EmailEditor = new function () {
         td.style.width = "100%";
         td.style.fontSize = "15px";
         td.style.fontFamily = "arial";
-        td.setAttribute("unselectable", "on");
+        td.setAttribute("unselectable", "on"); // fix for 160614
         Sitecore.Dhtml.attachEvent(td, "onclick", function () { return insertField(td); });
         Sitecore.Dhtml.attachEvent(td, "onmouseover", function () { td.style.background = '#DFDFDF'; });
         Sitecore.Dhtml.attachEvent(td, "onmouseout", function () { td.style.background = 'white'; });
